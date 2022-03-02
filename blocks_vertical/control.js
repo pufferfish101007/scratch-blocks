@@ -607,3 +607,27 @@ Blockly.Blocks['control_tell'] = {
     });
   }
 };
+
+Blockly.Blocks['control_restart'] = {
+  /**
+   * Block for when flag clicked.
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "id": "control_restart",
+      "message0": Blockly.Msg.CONTROL_RESTART,
+      "args0": [
+        {
+          "type": "field_image",
+          "src": Blockly.mainWorkspace.options.pathToMedia + "green-flag.svg",
+          "width": 24,
+          "height": 24,
+          "alt": ""
+        }
+      ],
+      "category": Blockly.Categories.control,
+      "extensions": ["colours_control", "shape_end"]
+    });
+  }
+};

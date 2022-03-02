@@ -179,7 +179,9 @@ Blockly.Blocks['looks_changeeffectby'] = {
             [Blockly.Msg.LOOKS_EFFECT_PIXELATE, 'PIXELATE'],
             [Blockly.Msg.LOOKS_EFFECT_MOSAIC, 'MOSAIC'],
             [Blockly.Msg.LOOKS_EFFECT_BRIGHTNESS, 'BRIGHTNESS'],
-            [Blockly.Msg.LOOKS_EFFECT_GHOST, 'GHOST']
+            [Blockly.Msg.LOOKS_EFFECT_GHOST, 'GHOST']/*,
+			[Blockly.Msg.LOOKS_EFFECT_BLUR, 'BLUR'],
+            [Blockly.Msg.LOOKS_EFFECT_SATURATE, 'SATURATE']*/
           ]
         },
         {
@@ -212,7 +214,9 @@ Blockly.Blocks['looks_seteffectto'] = {
             [Blockly.Msg.LOOKS_EFFECT_PIXELATE, 'PIXELATE'],
             [Blockly.Msg.LOOKS_EFFECT_MOSAIC, 'MOSAIC'],
             [Blockly.Msg.LOOKS_EFFECT_BRIGHTNESS, 'BRIGHTNESS'],
-            [Blockly.Msg.LOOKS_EFFECT_GHOST, 'GHOST']
+            [Blockly.Msg.LOOKS_EFFECT_GHOST, 'GHOST']/*,
+			[Blockly.Msg.LOOKS_EFFECT_BLUR, 'BLUR'],
+            [Blockly.Msg.LOOKS_EFFECT_SATURATE, 'SATURATE']*/
           ]
         },
         {

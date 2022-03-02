@@ -59,6 +59,7 @@ Blockly.Msg.CONTROL_ALLATONCE = 'all at once';
 Blockly.Msg.CONTROL_LAUNCH = 'launch';
 Blockly.Msg.CONTROL_TELL = 'tell %1 to';
 Blockly.Msg.CONTROL_TELL_STAGE = 'Stage';
+Blockly.Msg.CONTROL_RESTART = 'restart project %1';
 
 // Data blocks
 Blockly.Msg.DATA_SETVARIABLETO = 'set %1 to %2';
@@ -117,6 +118,8 @@ Blockly.Msg.LOOKS_EFFECT_PIXELATE = 'pixelate';
 Blockly.Msg.LOOKS_EFFECT_MOSAIC = 'mosaic';
 Blockly.Msg.LOOKS_EFFECT_BRIGHTNESS = 'brightness';
 Blockly.Msg.LOOKS_EFFECT_GHOST = 'ghost';
+Blockly.Msg.LOOKS_EFFECT_BLUR = 'blur';
+Blockly.Msg.LOOKS_EFFECT_SATURATE = 'saturate';
 Blockly.Msg.LOOKS_CHANGEEFFECTBY = 'change %1 effect by %2';
 Blockly.Msg.LOOKS_SETEFFECTTO = 'set %1 effect to %2';
 Blockly.Msg.LOOKS_CLEARGRAPHICEFFECTS = 'clear graphic effects';

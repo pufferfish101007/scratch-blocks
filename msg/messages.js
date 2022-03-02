@@ -42,6 +42,7 @@ Blockly.Msg.CONTROL_STOP = 'stop';
 Blockly.Msg.CONTROL_STOP_ALL = 'all';
 Blockly.Msg.CONTROL_STOP_THIS = 'this script';
 Blockly.Msg.CONTROL_STOP_OTHER = 'other scripts in sprite';
+Blockly.Msg.CONTROL_STOP_NOODLING = 'noodling around';
 Blockly.Msg.CONTROL_WAIT = 'wait %1 seconds';
 Blockly.Msg.CONTROL_WAITUNTIL = 'wait until %1';
 Blockly.Msg.CONTROL_REPEATUNTIL = 'repeat until %1';
@@ -55,6 +56,9 @@ Blockly.Msg.CONTROL_COUNTER = 'counter';
 Blockly.Msg.CONTROL_INCRCOUNTER = 'increment counter';
 Blockly.Msg.CONTROL_CLEARCOUNTER = 'clear counter';
 Blockly.Msg.CONTROL_ALLATONCE = 'all at once';
+Blockly.Msg.CONTROL_LAUNCH = 'launch';
+Blockly.Msg.CONTROL_TELL = 'tell %1 to';
+Blockly.Msg.CONTROL_TELL_STAGE = 'Stage';
 
 // Data blocks
 Blockly.Msg.DATA_SETVARIABLETO = 'set %1 to %2';
@@ -139,6 +143,13 @@ Blockly.Msg.LOOKS_NEXTBACKDROP_BLOCK = 'next backdrop';
 Blockly.Msg.LOOKS_NEXTBACKDROP = 'next backdrop';
 Blockly.Msg.LOOKS_PREVIOUSBACKDROP = 'previous backdrop';
 Blockly.Msg.LOOKS_RANDOMBACKDROP = 'random backdrop';
+Blockly.Msg.LOOKS_NAVCOSTUME = '%1 costume';
+Blockly.Msg.LOOKS_NAVBACKDROP = '%1 backdrop';
+Blockly.Msg.LOOKS_NAVCOSTUME_PREVIOUS = 'previous';
+Blockly.Msg.LOOKS_NAVCOSTUME_NEXT = 'next';
+Blockly.Msg.LOOKS_NAVCOSTUME_RANDOM = 'random';
+Blockly.Msg.LOOKS_CHANGECOSTUMEBY = 'change costume by %1';
+Blockly.Msg.LOOKS_CHANGEBACKDROPBY = 'change backdrop by %1';
 
 // Motion blocks
 Blockly.Msg.MOTION_MOVESTEPS = 'move %1 steps';

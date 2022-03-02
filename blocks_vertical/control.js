@@ -178,17 +178,21 @@ Blockly.Blocks['control_stop'] = {
     var ALL_SCRIPTS = 'all';
     var THIS_SCRIPT = 'this script';
     var OTHER_SCRIPTS = 'other scripts in sprite';
-    var stopDropdown = new Blockly.FieldDropdown(function() {
+    var NOODLING_AROUND = 'noodling around';
+	var stopDropdown = new Blockly.FieldDropdown(function() {
       if (this.sourceBlock_ &&
           this.sourceBlock_.nextConnection &&
           this.sourceBlock_.nextConnection.isConnected()) {
         return [
-          [Blockly.Msg.CONTROL_STOP_OTHER, OTHER_SCRIPTS]
+          [[Blockly.Msg.CONTROL_STOP_OTHER, OTHER_SCRIPTS],
+		  [Blockly.Msg.CONTROL_STOP_NOODLING, NOODLING_AROUND]
+		  ]
         ];
       }
       return [[Blockly.Msg.CONTROL_STOP_ALL, ALL_SCRIPTS],
         [Blockly.Msg.CONTROL_STOP_THIS, THIS_SCRIPT],
-        [Blockly.Msg.CONTROL_STOP_OTHER, OTHER_SCRIPTS]
+        [Blockly.Msg.CONTROL_STOP_OTHER, OTHER_SCRIPTS],
+		[Blockly.Msg.CONTROL_STOP_NOODLING, NOODLING_AROUND]
       ];
     }, function(option) {
       // Create an event group to keep field value and mutator in sync
@@ -518,6 +522,80 @@ Blockly.Blocks['control_all_at_once'] = {
     this.jsonInit({
       "message0": Blockly.Msg.CONTROL_ALLATONCE,
       "message1": "%1", // Statement
+      "args1": [
+        {
+          "type": "input_statement",
+          "name": "SUBSTACK"
+        }
+      ],
+      "category": Blockly.Categories.control,
+      "extensions": ["colours_control", "shape_statement"]
+    });
+  }
+};
+
+
+// Tell and launch are hard to make; currently not implemented and not in the block palette
+
+Blockly.Blocks['control_launch'] = {
+  /**
+   * Block for launching a script without pausing the current one.
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "type": "control_launch",
+      "message0": Blockly.Msg.CONTROL_LAUNCH,
+      "message1": "%1", // Statement
+      "args1": [
+        {
+          "type": "input_statement",
+          "name": "SUBSTACK"
+        }
+      ],
+      "category": Blockly.Categories.control,
+      "extensions": ["colours_control", "shape_statement"]
+    });
+  }
+};
+
+Blockly.Blocks['control_tell_menu'] = {
+  /**
+   * Tell drop-down menu.
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": "%1",
+      "args0": [
+        {
+          "type": "field_dropdown",
+          "name": "SPRITE",
+          "options": [['', '']]
+        }
+      ],
+      "extensions": ["colours_control", "output_string"]
+    });
+  }
+};
+
+
+Blockly.Blocks['control_tell'] = {
+  /**
+   * Block to run a script on another sprite.
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "type": "control_tell",
+      "message0": Blockly.Msg.CONTROL_TELL,
+      "message1": "%1", // Statement
+	  "args0": [
+        {
+          "type": "input_value",
+          "name": "SPRITE"
+        }
+      ],
       "args1": [
         {
           "type": "input_statement",

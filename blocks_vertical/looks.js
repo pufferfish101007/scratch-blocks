@@ -587,3 +587,93 @@ Blockly.Blocks['looks_nextbackdrop'] = {
     });
   }
 };
+
+Blockly.Blocks['looks_navcostume'] = {
+  /**
+   * Block to switch to the next, previous or a random costume.
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": Blockly.Msg.LOOKS_NAVCOSTUME,
+      "args0": [
+        {
+          "type": "field_dropdown",
+          "name": "NAVIGATE",
+          "options": [
+            [Blockly.Msg.LOOKS_NAVCOSTUME_NEXT, 'NEXT'],
+            [Blockly.Msg.LOOKS_NAVCOSTUME_PREVIOUS, 'PREVIOUS'],
+            [Blockly.Msg.LOOKS_NAVCOSTUME_RANDOM, 'RANDOM'],
+          ]
+        }
+      ],
+      "category": Blockly.Categories.looks,
+      "extensions": ["colours_looks", "shape_statement"]
+    });
+  }
+};
+
+Blockly.Blocks['looks_navbackdrop'] = {
+  /**
+   * Block to switch to the next, previous or a random backdrop.
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": Blockly.Msg.LOOKS_NAVBACKDROP,
+      "args0": [
+        {
+          "type": "field_dropdown",
+          "name": "NAVIGATE",
+          "options": [
+            [Blockly.Msg.LOOKS_NAVCOSTUME_NEXT, 'NEXT'],
+            [Blockly.Msg.LOOKS_NAVCOSTUME_PREVIOUS, 'PREVIOUS'],
+            [Blockly.Msg.LOOKS_NAVCOSTUME_RANDOM, 'RANDOM'],
+          ]
+        }
+      ],
+      "category": Blockly.Categories.looks,
+      "extensions": ["colours_looks", "shape_statement"]
+    });
+  }
+};
+
+Blockly.Blocks['looks_changecostumeby'] = {
+  /**
+   * Block to change the costume number by a certain amount.
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": Blockly.Msg.LOOKS_CHANGECOSTUMEBY,
+      "args0": [
+        {
+          "type": "input_value",
+          "name": "CHANGE"
+        }
+      ],
+      "category": Blockly.Categories.looks,
+      "extensions": ["colours_looks", "shape_statement"]
+    });
+  }
+};
+
+Blockly.Blocks['looks_changebackdropby'] = {
+  /**
+   * Block to change the backdrop number by a certain amount.
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": Blockly.Msg.LOOKS_CHANGEBACKDROPBY,
+      "args0": [
+        {
+          "type": "input_value",
+          "name": "CHANGE"
+        }
+      ],
+      "category": Blockly.Categories.looks,
+      "extensions": ["colours_looks", "shape_statement"]
+    });
+  }
+};

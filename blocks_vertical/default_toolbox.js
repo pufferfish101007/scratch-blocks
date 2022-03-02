@@ -154,6 +154,22 @@ Blockly.Blocks.defaultToolbox = '<xml id="toolbox-categories" style="display: no
     '</block>' +
     '<block type="looks_nextcostume" id="looks_nextcostume"></block>' +
     '<block type="looks_nextbackdrop" id="looks_nextbackdrop"></block>' +
+	'<block type="looks_navcostume" id="looks_navcostume"></block>' +
+    '<block type="looks_navbackdrop" id="looks_navbackdrop"></block>' +
+	'<block type="looks_changecostumeby" id="looks_changecostumeby">' +
+      '<value name="CHANGE">' +
+        '<shadow type="math_number">' +
+          '<field name="NUM">1</field>' +
+        '</shadow>' +
+      '</value>' +
+    '</block>' +
+    '<block type="looks_changebackdropby" id="looks_changebackdropby">' +
+      '<value name="CHANGE">' +
+        '<shadow type="math_number">' +
+          '<field name="NUM">1</field>' +
+        '</shadow>' +
+      '</value>' +
+    '</block>' +
     '<block type="looks_switchbackdropto" id="looks_switchbackdropto">' +
       '<value name="BACKDROP">' +
         '<shadow type="looks_backdrops"></shadow>' +
@@ -295,6 +311,12 @@ Blockly.Blocks.defaultToolbox = '<xml id="toolbox-categories" style="display: no
     '<block type="control_if_else" id="control_if_else"></block>' +
     '<block type="control_wait_until" id="control_wait_until"></block>' +
     '<block type="control_repeat_until" id="control_repeat_until"></block>' +
+	'<block type="control_launch" id="control_launch"></block>' +
+	'<block type="control_tell" id="control_tell">' +
+      '<value name="SPRITE">' +
+        '<shadow type="control_tell_menu"></shadow>' +
+      '</value>' +
+    '</block>' +
     '<block type="control_stop" id="control_stop"></block>' +
     '<block type="control_start_as_clone" id="control_start_as_clone"></block>' +
     '<block type="control_create_clone_of" id="control_create_clone_of">' +

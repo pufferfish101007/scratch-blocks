@@ -59,7 +59,6 @@ Blockly.Msg.CONTROL_ALLATONCE = 'all at once';
 Blockly.Msg.CONTROL_LAUNCH = 'launch';
 Blockly.Msg.CONTROL_TELL = 'tell %1 to';
 Blockly.Msg.CONTROL_TELL_STAGE = 'Stage';
-Blockly.Msg.CONTROL_RESTART = 'restart project %1';
 
 // Data blocks
 Blockly.Msg.DATA_SETVARIABLETO = 'set %1 to %2';
@@ -100,6 +99,7 @@ Blockly.Msg.EVENT_WHENKEYPRESSED_RIGHT = 'right arrow';
 Blockly.Msg.EVENT_WHENKEYPRESSED_DOWN = 'down arrow';
 Blockly.Msg.EVENT_WHENKEYPRESSED_UP = 'up arrow';
 Blockly.Msg.EVENT_WHENKEYPRESSED_ANY = 'any';
+Blockly.Msg.EVENT_RESTART = 'restart project %1';
 
 // Looks blocks
 Blockly.Msg.LOOKS_SAYFORSECS = 'say %1 for %2 seconds';
@@ -278,6 +278,13 @@ Blockly.Msg.SENSING_CURRENT_SECOND = 'second';
 Blockly.Msg.SENSING_DAYSSINCE2000 = 'days since 2000';
 Blockly.Msg.SENSING_USERNAME = 'username';
 Blockly.Msg.SENSING_USERID = 'user id';
+
+// TurboWarp blocks that were moved into Sensing
+Blockly.Msg.SENSING_LASTKEYPRESSED = 'last key pressed';
+Blockly.Msg.SENSING_MOUSEBUTTONDOWN = '%1 mouse button down?';
+Blockly.Msg.SENSING_MOUSEBUTTONDOWN_0 = '(0) primary';
+Blockly.Msg.SENSING_MOUSEBUTTONDOWN_1 = '(1) middle';
+Blockly.Msg.SENSING_MOUSEBUTTONDOWN_2 = '(2) secondary';
 
 // Sound blocks
 Blockly.Msg.SOUND_PLAY = 'start sound %1';

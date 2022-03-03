@@ -326,3 +326,28 @@ Blockly.Blocks['event_whenkeypressed'] = {
     });
   }
 };
+
+Blockly.Blocks['control_restart'] = {
+  /**
+   * Block to click the green flag from a project.
+   * ID starts with control for legacy reasons.
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "id": "control_restart",
+      "message0": Blockly.Msg.EVENT_RESTART,
+      "args0": [
+        {
+          "type": "field_image",
+          "src": Blockly.mainWorkspace.options.pathToMedia + "green-flag.svg",
+          "width": 24,
+          "height": 24,
+          "alt": ""
+        }
+      ],
+      "category": Blockly.Categories.event,
+      "extensions": ["colours_event", "shape_end"]
+    });
+  }
+};

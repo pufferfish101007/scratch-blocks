@@ -537,3 +537,63 @@ Blockly.Blocks['sensing_userid'] = {
     });
   }
 };
+
+// TurboWarp blocks that were moved into Sensing
+// Original extension is hidden for compatibility
+Blockly.Blocks['sensing_lastkeypressed'] = {
+  /**
+   * Block to get the last key pressed.
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": Blockly.Msg.SENSING_LASTKEYPRESSED,
+      "category": Blockly.Categories.sensing,
+      "extensions": ["colours_sensing", "output_string"]
+    });
+  }
+};
+
+Blockly.Blocks['sensing_mousebuttondownmenu'] = {
+  /**
+   * Options for mouse buttons.
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": "%1",
+      "args0": [
+        {
+          "type": "field_dropdown",
+          "name": "BUTTON",
+          "options": [
+            [Blockly.Msg.SENSING_MOUSEBUTTONDOWN_0, '0'],
+            [Blockly.Msg.SENSING_MOUSEBUTTONDOWN_1, '1'],
+            [Blockly.Msg.SENSING_MOUSEBUTTONDOWN_2, '2']
+          ]
+        }
+      ],
+      "extensions": ["colours_sensing", "output_string"]
+    });
+  }
+};
+
+Blockly.Blocks['sensing_mousebuttondown'] = {
+  /**
+   * Block to get the last key pressed.
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": Blockly.Msg.SENSING_MOUSEBUTTONDOWN,
+	  "args0": [
+        {
+          "type": "input_value",
+          "name": "BUTTON"
+        }
+      ],
+      "category": Blockly.Categories.sensing,
+      "extensions": ["colours_sensing", "output_string"]
+    });
+  }
+};

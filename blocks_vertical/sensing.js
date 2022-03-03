@@ -593,7 +593,7 @@ Blockly.Blocks['sensing_mousebuttondown'] = {
         }
       ],
       "category": Blockly.Categories.sensing,
-      "extensions": ["colours_sensing", "output_string"]
+      "extensions": ["colours_sensing", "output_boolean"]
     });
   }
 };

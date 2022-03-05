@@ -681,3 +681,65 @@ Blockly.Blocks['looks_changebackdropby'] = {
     });
   }
 };
+
+Blockly.Blocks['looks_sprite'] = {
+  /**
+   * Sprites drop-down menu.
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": "%1",
+      "args0": [
+        {
+          "type": "field_dropdown",
+          "name": "SPRITE",
+          "options": []
+        }
+      ],
+      "category": Blockly.Categories.looks,
+      "extensions": ["colours_looks", "output_string"]
+    });
+  }
+};
+
+
+Blockly.Blocks['looks_goontopof'] = {
+  /**
+   * Block to go on top of another sprite..
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": Blockly.Msg.LOOKS_GOONTOPOF,
+     "args0": [
+        {
+          "type": "input_value",
+          "name": "SPRITE"
+        }
+      ],
+      "category": Blockly.Categories.looks,
+      "extensions": ["colours_looks", "shape_statement"]
+    });
+  }
+};
+
+Blockly.Blocks['looks_colorfxtest'] = {
+  /**
+   * E
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": Blockly.Msg.LOOKS_COLORFXTEST,
+      "args0": [
+        {
+          "type": "input_value",
+          "name": "TEST"
+        }
+      ],
+      "category": Blockly.Categories.looks,
+      "extensions": ["colours_looks", "shape_statement"]
+    });
+  }
+};

@@ -43,6 +43,7 @@ Blockly.Msg.CONTROL_STOP_ALL = 'all';
 Blockly.Msg.CONTROL_STOP_THIS = 'this script';
 Blockly.Msg.CONTROL_STOP_OTHER = 'other scripts in sprite';
 Blockly.Msg.CONTROL_STOP_NOODLING = 'noodling around';
+Blockly.Msg.CONTROL_STOP_RUNNING = 'running scripts';
 Blockly.Msg.CONTROL_WAIT = 'wait %1 seconds';
 Blockly.Msg.CONTROL_WAITUNTIL = 'wait until %1';
 Blockly.Msg.CONTROL_REPEATUNTIL = 'repeat until %1';
@@ -100,6 +101,7 @@ Blockly.Msg.EVENT_WHENKEYPRESSED_DOWN = 'down arrow';
 Blockly.Msg.EVENT_WHENKEYPRESSED_UP = 'up arrow';
 Blockly.Msg.EVENT_WHENKEYPRESSED_ANY = 'any';
 Blockly.Msg.EVENT_RESTART = 'restart project %1';
+Blockly.Msg.EVENT_WHENSTOPSIGNCLICKED = 'when %1 clicked';
 
 // Looks blocks
 Blockly.Msg.LOOKS_SAYFORSECS = 'say %1 for %2 seconds';
@@ -153,6 +155,9 @@ Blockly.Msg.LOOKS_NAVCOSTUME_NEXT = 'next';
 Blockly.Msg.LOOKS_NAVCOSTUME_RANDOM = 'random';
 Blockly.Msg.LOOKS_CHANGECOSTUMEBY = 'change costume by %1';
 Blockly.Msg.LOOKS_CHANGEBACKDROPBY = 'change backdrop by %1';
+Blockly.Msg.LOOKS_GOONTOPOF = 'go on top of %1';
+Blockly.Msg.LOOKS_GOONTOPOF_STAGE = 'Stage';
+Blockly.Msg.LOOKS_COLORFXTEST = 'color fx test %1';
 
 // Motion blocks
 Blockly.Msg.MOTION_MOVESTEPS = 'move %1 steps';
@@ -233,6 +238,7 @@ Blockly.Msg.OPERATORS_MATHOP_10EXP = '10 ^';
 
 // Procedures blocks
 Blockly.Msg.PROCEDURES_DEFINITION = 'define %1';
+Blockly.Msg.PROCEDURES_RETURN = 'return %1';
 
 // Sensing blocks
 Blockly.Msg.SENSING_TOUCHINGOBJECT = 'touching %1?';

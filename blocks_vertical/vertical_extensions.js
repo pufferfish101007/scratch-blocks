@@ -46,15 +46,18 @@ Blockly.ScratchBlocks.VerticalExtensions.colourHelper = function(category) {
   if (!(colours && colours.primary && colours.secondary && colours.tertiary)) {
     throw new Error('Could not find colours for category "' + category + '"');
   }
-  /**
-   * Set the primary, secondary, and tertiary colours on this block for the
-   * given category.
-   * @this {Blockly.Block}
-   */
-  return function() {
-    this.setColourFromRawValues_(colours.primary, colours.secondary,
-        colours.tertiary);
-  };
+
+  return (
+      /**
+      * Set the primary, secondary, and tertiary colours on this block for the
+      * given category.
+      * @this {Blockly.Block}
+      */
+	function() {
+	  this.setColourFromRawValues_(colours.primary, colours.secondary,
+	  	colours.tertiary);
+	  }
+  );
 };
 
 /**

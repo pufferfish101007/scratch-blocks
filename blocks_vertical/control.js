@@ -179,20 +179,21 @@ Blockly.Blocks['control_stop'] = {
     var THIS_SCRIPT = 'this script';
     var OTHER_SCRIPTS = 'other scripts in sprite';
     var NOODLING_AROUND = 'noodling around';
+	var RUNNING_SCRIPTS = 'running scripts';
 	var stopDropdown = new Blockly.FieldDropdown(function() {
       if (this.sourceBlock_ &&
           this.sourceBlock_.nextConnection &&
           this.sourceBlock_.nextConnection.isConnected()) {
         return [
           [[Blockly.Msg.CONTROL_STOP_OTHER, OTHER_SCRIPTS],
-		  [Blockly.Msg.CONTROL_STOP_NOODLING, NOODLING_AROUND]
+		  [Blockly.Msg.CONTROL_STOP_RUNNING, RUNNING_SCRIPTS]
 		  ]
         ];
       }
       return [[Blockly.Msg.CONTROL_STOP_ALL, ALL_SCRIPTS],
         [Blockly.Msg.CONTROL_STOP_THIS, THIS_SCRIPT],
         [Blockly.Msg.CONTROL_STOP_OTHER, OTHER_SCRIPTS],
-		[Blockly.Msg.CONTROL_STOP_NOODLING, NOODLING_AROUND]
+		[Blockly.Msg.CONTROL_STOP_RUNNING, RUNNING_SCRIPTS]
       ];
     }, function(option) {
       // Create an event group to keep field value and mutator in sync

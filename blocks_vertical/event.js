@@ -351,3 +351,27 @@ Blockly.Blocks['control_restart'] = {
     });
   }
 };
+
+Blockly.Blocks['event_whenstopsignclicked'] = {
+  /**
+   * Block for when stop sign clicked.
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "id": "event_whenstopsignclicked",
+      "message0": Blockly.Msg.EVENT_WHENSTOPSIGNCLICKED,
+      "args0": [
+        {
+          "type": "field_image",
+          "src": Blockly.mainWorkspace.options.pathToMedia + "stop-sign.svg",
+          "width": 20,
+          "height": 20,
+          "alt": "stop sign"
+        }
+      ],
+      "category": Blockly.Categories.event,
+      "extensions": ["colours_event", "shape_hat"]
+    });
+  }
+};

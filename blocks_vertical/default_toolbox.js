@@ -266,6 +266,7 @@ Blockly.Blocks.defaultToolbox = '<xml id="toolbox-categories" style="display: no
   '</category>' +
   '<category name="%{BKY_CATEGORY_EVENTS}" id="events" colour="#FFD500" secondaryColour="#CC9900">' +
     '<block type="event_whenflagclicked" id="event_whenflagclicked"></block>' +
+	'<block type="event_whenstopsignclicked"/>' +
     '<block type="event_whenkeypressed" id="event_whenkeypressed">' +
     '</block>' +
     '<block type="event_whenthisspriteclicked" id="event_whenthisspriteclicked"></block>' +

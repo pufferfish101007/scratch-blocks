@@ -743,3 +743,18 @@ Blockly.Blocks['looks_colorfxtest'] = {
     });
   }
 };
+
+Blockly.Blocks['looks_stretch'] = {
+  /**
+   * Block to report stretch
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": Blockly.Msg.LOOKS_STRETCH,
+      "category": Blockly.Categories.looks,
+      "checkboxInFlyout": true,
+      "extensions": ["colours_looks", "output_number"]
+    });
+  }
+};

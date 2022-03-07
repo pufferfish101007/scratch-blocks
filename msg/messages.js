@@ -158,6 +158,7 @@ Blockly.Msg.LOOKS_CHANGEBACKDROPBY = 'change backdrop by %1';
 Blockly.Msg.LOOKS_GOONTOPOF = 'go on top of %1';
 Blockly.Msg.LOOKS_GOONTOPOF_STAGE = 'Stage';
 Blockly.Msg.LOOKS_COLORFXTEST = 'color fx test %1';
+Blockly.Msg.LOOKS_STRETCH = 'stretch';
 
 // Motion blocks
 Blockly.Msg.MOTION_MOVESTEPS = 'move %1 steps';
@@ -235,10 +236,30 @@ Blockly.Msg.OPERATORS_MATHOP_LN = 'ln';
 Blockly.Msg.OPERATORS_MATHOP_LOG = 'log';
 Blockly.Msg.OPERATORS_MATHOP_EEXP = 'e ^';
 Blockly.Msg.OPERATORS_MATHOP_10EXP = '10 ^';
+Blockly.Msg.OPERATORS_MATHOP_SIGN = 'sign';
+Blockly.Msg.OPERATORS_GTOREQ = '%1 >= %2';
+Blockly.Msg.OPERATORS_LTOREQ = '%1 <= %2';
+Blockly.Msg.OPERATORS_POWER = '%1 ^ %2';
+Blockly.Msg.OPERATORS_IDENTICAL = 'is %1 identical to %2?';
+Blockly.Msg.OPERATORS_NEG = '-%1';
+Blockly.Msg.OPERATORS_UNICODEOF = 'Unicode of %1';
+Blockly.Msg.OPERATORS_UNICODEFROM = 'Unicode %1 as letter';
+Blockly.Msg.OPERATORS_TRUE = 'true';
+Blockly.Msg.OPERATORS_FALSE = 'false';
+Blockly.Msg.OPERATORS_XOR = '%1 xor %2';
+Blockly.Msg.OPERATORS_LETTERSOF = 'letters %1 to %2 of %3';
+Blockly.Msg.OPERATORS_SPLIT = 'item %1 of %2 split by %3';
+Blockly.Msg.OPERATORS_COUNT = 'count number of %1 in %2';
+Blockly.Msg.OPERATORS_INDEXOF = 'index of %1 in %2';
+Blockly.Msg.OPERATORS_REPLACE = 'replace %1 in %2 with %3';
+Blockly.Msg.OPERATORS_REPLACE_HELLOWORLD = 'Hello world!';
+Blockly.Msg.OPERATORS_REPLACE_WORLD = 'world';
+Blockly.Msg.OPERATORS_REPLACE_FELLOWSRATCHERS = 'fellow Scratchers';
+Blockly.Msg.OPERATORS_COUNT_APPLE = 'p';
+Blockly.Msg.OPERATORS_REPEAT = 'repeat %1 %2 times';
 
 // Procedures blocks
 Blockly.Msg.PROCEDURES_DEFINITION = 'define %1';
-Blockly.Msg.PROCEDURES_RETURN = 'return %1';
 
 // Sensing blocks
 Blockly.Msg.SENSING_TOUCHINGOBJECT = 'touching %1?';
@@ -270,6 +291,7 @@ Blockly.Msg.SENSING_OF_COSTUMENUMBER = 'costume #';
 Blockly.Msg.SENSING_OF_COSTUMENAME = 'costume name';
 Blockly.Msg.SENSING_OF_SIZE = 'size';
 Blockly.Msg.SENSING_OF_VOLUME = 'volume';
+Blockly.Msg.SENSING_OF_STRETCH = 'stretch';
 Blockly.Msg.SENSING_OF_BACKDROPNUMBER = 'backdrop #';
 Blockly.Msg.SENSING_OF_BACKDROPNAME = 'backdrop name';
 Blockly.Msg.SENSING_OF_STAGE = 'Stage';

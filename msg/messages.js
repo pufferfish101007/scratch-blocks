@@ -102,6 +102,7 @@ Blockly.Msg.EVENT_WHENKEYPRESSED_UP = 'up arrow';
 Blockly.Msg.EVENT_WHENKEYPRESSED_ANY = 'any';
 Blockly.Msg.EVENT_RESTART = 'restart project %1';
 Blockly.Msg.EVENT_WHENSTOPSIGNCLICKED = 'when %1 clicked';
+Blockly.Msg.EVENT_WHEN = 'when %1';
 
 // Looks blocks
 Blockly.Msg.LOOKS_SAYFORSECS = 'say %1 for %2 seconds';
@@ -249,9 +250,9 @@ Blockly.Msg.OPERATORS_FALSE = 'false';
 Blockly.Msg.OPERATORS_XOR = '%1 xor %2';
 Blockly.Msg.OPERATORS_LETTERSOF = 'letters %1 to %2 of %3';
 Blockly.Msg.OPERATORS_SPLIT = 'item %1 of %2 split by %3';
-Blockly.Msg.OPERATORS_COUNT = 'count number of %1 in %2';
+Blockly.Msg.OPERATORS_COUNT = 'count number of %1s in %2';
 Blockly.Msg.OPERATORS_INDEXOF = 'index of %1 in %2';
-Blockly.Msg.OPERATORS_REPLACE = 'replace %1 in %2 with %3';
+Blockly.Msg.OPERATORS_REPLACE = 'replace %1 with %3 in %2';
 Blockly.Msg.OPERATORS_REPLACE_HELLOWORLD = 'Hello world!';
 Blockly.Msg.OPERATORS_REPLACE_WORLD = 'world';
 Blockly.Msg.OPERATORS_REPLACE_FELLOWSRATCHERS = 'fellow Scratchers';

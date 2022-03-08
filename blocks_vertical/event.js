@@ -375,3 +375,24 @@ Blockly.Blocks['event_whenstopsignclicked'] = {
     });
   }
 };
+
+Blockly.Blocks['event_when'] = {
+  /**
+   * Block for when a condition is true.
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": Blockly.Msg.EVENT_WHEN,
+      "args0": [
+        {
+          "type": "input_value",
+          "name": "CONDITION",
+          "check": "Boolean"
+        }
+      ],
+      "category": Blockly.Categories.event,
+      "extensions": ["colours_event", "shape_hat"]
+    });
+  }
+};

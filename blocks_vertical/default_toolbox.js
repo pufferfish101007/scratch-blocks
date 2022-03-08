@@ -152,8 +152,6 @@ Blockly.Blocks.defaultToolbox = '<xml id="toolbox-categories" style="display: no
         '<shadow type="looks_costume"></shadow>' +
       '</value>' +
     '</block>' +
-    '<block type="looks_nextcostume" id="looks_nextcostume"></block>' +
-    '<block type="looks_nextbackdrop" id="looks_nextbackdrop"></block>' +
 	'<block type="looks_navcostume" id="looks_navcostume"></block>' +
     '<block type="looks_navbackdrop" id="looks_navbackdrop"></block>' +
 	'<block type="looks_changecostumeby" id="looks_changecostumeby">' +
@@ -279,8 +277,7 @@ Blockly.Blocks.defaultToolbox = '<xml id="toolbox-categories" style="display: no
         '</shadow>' +
       '</value>' +
     '</block>' +
-    '<block type="event_whenbroadcastreceived" id="event_whenbroadcastreceived">' +
-    '</block>' +
+    '<block type="event_whenbroadcastreceived" id="event_whenbroadcastreceived"/>' +
     '<block type="event_broadcast" id="event_broadcast">' +
       '<value name="BROADCAST_INPUT">' +
         '<shadow type="event_broadcast_menu"></shadow>' +

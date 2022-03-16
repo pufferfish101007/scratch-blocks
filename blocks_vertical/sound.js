@@ -243,3 +243,28 @@ Blockly.Blocks['sound_volume'] = {
     });
   }
 };
+
+Blockly.Blocks['sound_geteffect'] = {
+  /**
+   * Block to report a sound effect
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": Blockly.Msg.SOUND_GETEFFECT,
+	  "args0": [
+        {
+          "type": "field_dropdown",
+          "name": "EFFECT",
+          "options": [
+            [Blockly.Msg.SOUND_EFFECTS_PITCH, 'PITCH'],
+            [Blockly.Msg.SOUND_EFFECTS_PAN, 'PAN']
+          ]
+        }
+      ],
+      "category": Blockly.Categories.sound,
+      "checkboxInFlyout": false,
+      "extensions": ["colours_sounds", "output_number"]
+    });
+  }
+};

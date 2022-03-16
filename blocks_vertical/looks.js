@@ -179,9 +179,7 @@ Blockly.Blocks['looks_changeeffectby'] = {
             [Blockly.Msg.LOOKS_EFFECT_PIXELATE, 'PIXELATE'],
             [Blockly.Msg.LOOKS_EFFECT_MOSAIC, 'MOSAIC'],
             [Blockly.Msg.LOOKS_EFFECT_BRIGHTNESS, 'BRIGHTNESS'],
-            [Blockly.Msg.LOOKS_EFFECT_GHOST, 'GHOST']/*,
-			[Blockly.Msg.LOOKS_EFFECT_BLUR, 'BLUR'],
-            [Blockly.Msg.LOOKS_EFFECT_SATURATE, 'SATURATE']*/
+            [Blockly.Msg.LOOKS_EFFECT_GHOST, 'GHOST']
           ]
         },
         {
@@ -214,9 +212,7 @@ Blockly.Blocks['looks_seteffectto'] = {
             [Blockly.Msg.LOOKS_EFFECT_PIXELATE, 'PIXELATE'],
             [Blockly.Msg.LOOKS_EFFECT_MOSAIC, 'MOSAIC'],
             [Blockly.Msg.LOOKS_EFFECT_BRIGHTNESS, 'BRIGHTNESS'],
-            [Blockly.Msg.LOOKS_EFFECT_GHOST, 'GHOST']/*,
-			[Blockly.Msg.LOOKS_EFFECT_BLUR, 'BLUR'],
-            [Blockly.Msg.LOOKS_EFFECT_SATURATE, 'SATURATE']*/
+            [Blockly.Msg.LOOKS_EFFECT_GHOST, 'GHOST']
           ]
         },
         {
@@ -754,6 +750,36 @@ Blockly.Blocks['looks_stretch'] = {
       "message0": Blockly.Msg.LOOKS_STRETCH,
       "category": Blockly.Categories.looks,
       "checkboxInFlyout": true,
+      "extensions": ["colours_looks", "output_number"]
+    });
+  }
+};
+
+Blockly.Blocks['looks_geteffect'] = {
+  /**
+   * Block to report a graphic effect
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": Blockly.Msg.LOOKS_GETEFFECT,
+	  "args0": [
+        {
+          "type": "field_dropdown",
+          "name": "EFFECT",
+          "options": [
+            [Blockly.Msg.LOOKS_EFFECT_COLOR, 'COLOR'],
+            [Blockly.Msg.LOOKS_EFFECT_FISHEYE, 'FISHEYE'],
+            [Blockly.Msg.LOOKS_EFFECT_WHIRL, 'WHIRL'],
+            [Blockly.Msg.LOOKS_EFFECT_PIXELATE, 'PIXELATE'],
+            [Blockly.Msg.LOOKS_EFFECT_MOSAIC, 'MOSAIC'],
+            [Blockly.Msg.LOOKS_EFFECT_BRIGHTNESS, 'BRIGHTNESS'],
+            [Blockly.Msg.LOOKS_EFFECT_GHOST, 'GHOST']
+          ]
+        }
+      ],
+      "category": Blockly.Categories.looks,
+      "checkboxInFlyout": false,
       "extensions": ["colours_looks", "output_number"]
     });
   }

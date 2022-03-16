@@ -180,6 +180,7 @@ Blockly.Blocks['control_stop'] = {
     var OTHER_SCRIPTS = 'other scripts in sprite';
     var NOODLING_AROUND = 'noodling around';
 	var RUNNING_SCRIPTS = 'running scripts';
+	var ALL_THIS_SPRITE = 'all scripts in sprite';
 	var stopDropdown = new Blockly.FieldDropdown(function() {
       if (this.sourceBlock_ &&
           this.sourceBlock_.nextConnection &&
@@ -193,6 +194,7 @@ Blockly.Blocks['control_stop'] = {
       return [[Blockly.Msg.CONTROL_STOP_ALL, ALL_SCRIPTS],
         [Blockly.Msg.CONTROL_STOP_THIS, THIS_SCRIPT],
         [Blockly.Msg.CONTROL_STOP_OTHER, OTHER_SCRIPTS],
+		[Blockly.Msg.CONTROL_STOP_ALL_SPRITE, ALL_THIS_SPRITE],
 		[Blockly.Msg.CONTROL_STOP_RUNNING, RUNNING_SCRIPTS]
       ];
     }, function(option) {
@@ -536,8 +538,6 @@ Blockly.Blocks['control_all_at_once'] = {
 };
 
 
-// Tell and launch are hard to make; currently not implemented and not in the block palette
-
 Blockly.Blocks['control_launch'] = {
   /**
    * Block for launching a script without pausing the current one.
@@ -560,6 +560,7 @@ Blockly.Blocks['control_launch'] = {
   }
 };
 
+// Tell is hard to make; currently not implemented and not in the block palette
 Blockly.Blocks['control_tell_menu'] = {
   /**
    * Tell drop-down menu.
@@ -605,6 +606,26 @@ Blockly.Blocks['control_tell'] = {
       ],
       "category": Blockly.Categories.control,
       "extensions": ["colours_control", "shape_statement"]
+    });
+  }
+};
+
+Blockly.Blocks['control_sayasscript'] = {
+  /**
+   * Block to output something from a script as a text bubble, for development.
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": Blockly.Msg.CONTROL_SAYASSCRIPT,
+      "args0": [
+        {
+          "type": "input_value",
+          "name": "MESSAGE"
+        }
+      ],
+      "category": Blockly.Categories.control,
+      "extensions": ["colours_control", "shape_end"]
     });
   }
 };

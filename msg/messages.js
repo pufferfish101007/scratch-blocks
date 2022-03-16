@@ -44,6 +44,7 @@ Blockly.Msg.CONTROL_STOP_THIS = 'this script';
 Blockly.Msg.CONTROL_STOP_OTHER = 'other scripts in sprite';
 Blockly.Msg.CONTROL_STOP_NOODLING = 'noodling around';
 Blockly.Msg.CONTROL_STOP_RUNNING = 'running scripts';
+Blockly.Msg.CONTROL_STOP_ALL_SPRITE = 'all scripts in sprite';
 Blockly.Msg.CONTROL_WAIT = 'wait %1 seconds';
 Blockly.Msg.CONTROL_WAITUNTIL = 'wait until %1';
 Blockly.Msg.CONTROL_REPEATUNTIL = 'repeat until %1';
@@ -60,6 +61,7 @@ Blockly.Msg.CONTROL_ALLATONCE = 'all at once';
 Blockly.Msg.CONTROL_LAUNCH = 'launch';
 Blockly.Msg.CONTROL_TELL = 'tell %1 to';
 Blockly.Msg.CONTROL_TELL_STAGE = 'Stage';
+Blockly.Msg.CONTROL_SAYASSCRIPT = 'say as script %1';
 
 // Data blocks
 Blockly.Msg.DATA_SETVARIABLETO = 'set %1 to %2';
@@ -123,6 +125,7 @@ Blockly.Msg.LOOKS_EFFECT_BRIGHTNESS = 'brightness';
 Blockly.Msg.LOOKS_EFFECT_GHOST = 'ghost';
 Blockly.Msg.LOOKS_EFFECT_BLUR = 'blur';
 Blockly.Msg.LOOKS_EFFECT_SATURATE = 'saturate';
+Blockly.Msg.LOOKS_EFFECT_INVERT = 'invert';
 Blockly.Msg.LOOKS_CHANGEEFFECTBY = 'change %1 effect by %2';
 Blockly.Msg.LOOKS_SETEFFECTTO = 'set %1 effect to %2';
 Blockly.Msg.LOOKS_CLEARGRAPHICEFFECTS = 'clear graphic effects';
@@ -160,6 +163,7 @@ Blockly.Msg.LOOKS_GOONTOPOF = 'go on top of %1';
 Blockly.Msg.LOOKS_GOONTOPOF_STAGE = 'Stage';
 Blockly.Msg.LOOKS_COLORFXTEST = 'color fx test %1';
 Blockly.Msg.LOOKS_STRETCH = 'stretch';
+Blockly.Msg.LOOKS_GETEFFECT = '%1 effect';
 
 // Motion blocks
 Blockly.Msg.MOTION_MOVESTEPS = 'move %1 steps';
@@ -328,6 +332,7 @@ Blockly.Msg.SOUND_CHANGEVOLUMEBY = 'change volume by %1';
 Blockly.Msg.SOUND_SETVOLUMETO = 'set volume to %1%';
 Blockly.Msg.SOUND_VOLUME = 'volume';
 Blockly.Msg.SOUND_RECORD = 'record...';
+Blockly.Msg.SOUND_GETEFFECT = '%1 effect';
 
 // Category labels
 Blockly.Msg.CATEGORY_MOTION = 'Motion';
